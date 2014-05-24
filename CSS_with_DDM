@@ -1,0 +1,899 @@
+/* Color: #7a2482 purple or #5e2865             */
+/* #ffa200     orange                           */
+
+/*=======HOOKAH OF THE MONTH!!!!================*/
+/*  Use TinyUrl or similar to link to thread!   */
+    a[href="http://i.imgur.com/cQtp1FC.jpg"]:after {             
+        content: url(%%hotm%%) 
+    }          
+
+/*==========MESSAGE ABOVE NEW POST==============*/
+#link-desc, #text-desc {font-size: 0px;}
+#link-desc:after, #text-desc:after {
+    display: block;
+    font-weight: bold; 
+    color: black; 
+    content: "Please make sure this post does not violate any r/hookah rules. " 
+    "Please read the Wiki before posting any beginner questions. " 
+    " THANK YOU!";
+    font-size: 14px;
+    text-align: center;
+} 
+
+/*===Message below the comment box==============*/
+    .commentarea {
+        position: static
+    }
+.commentarea .usertext .usertext-edit:after {
+    content: "Please read the rules and the Wiki before posting!";
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    padding: 4px;
+    background-color:  #ffa200     
+    border: 2px solid #5e2865;       
+    border-top-left-radius:4px; 
+    border-top-right-radius:4px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+    font-size: 11px;
+    font-weight: bold
+    }
+
+
+
+/*==============STICKY MENU BAR=================*/
+    div.content {
+        margin-top: 50px;
+    }
+   .titlebox form {
+        position: static;
+    }
+    .titlebox blockquote:first-child {
+        border-left: none;
+        position: absolute !important;
+        z-index: 10;
+        top: 170px;
+        left: 90px
+    }
+.titlebox blockquote:first-child p:first-child {
+    margin-top: 0px;
+    padding: 5px;
+    float: left;
+    font-size: 10pt;
+    background:#5e2865;
+    border: 2px solid ;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    font-weight:bold;
+    cursor:default;
+}
+.titlebox blockquote ul {
+    float: right;
+    padding: 1px;
+    background: #5e2865;
+    border: 2px solid; 
+    border-radius: 10px;
+    margin:0px;
+    color:#fff;
+}
+/*hide and styles lists*/
+.titlebox blockquote ul li {
+    display: none;
+    padding:2px;
+    text-align:center;
+}
+/*makes whole list item selectable*/
+.titlebox blockquote li a {
+    display:block;
+}
+/*shows menu on hover*/
+.titlebox blockquote ul li:first-child, 
+.titlebox blockquote ul:hover li {
+    display: block
+}
+/*turns top list item into section header*/
+.titlebox blockquote li:first-child {
+    font-size: 8pt;
+    font-weight: bold; 
+    color:#ffa200;
+    padding: 4px;
+    cursor:default;
+}
+/*styling menu items*/
+.titlebox blockquote:first-child ul li:hover {
+    background:#ffa200;
+    color:#000;
+}
+.titlebox blockquote li a:hover {
+    color:#fff;
+}
+.titlebox blockquote li a:link {
+    color:#fff;
+}
+.titlebox blockquote li a:visited {
+    color:#fff;
+}
+/*custom size for menu sections*/
+.titlebox blockquote ul:nth-of-type(1) {width:145px;} 
+.titlebox blockquote ul:nth-of-type(2) {width:145px;}
+.titlebox blockquote ul:nth-of-type(3) {width:145px;}
+.titlebox blockquote ul:nth-of-type(4) {width:145px;}
+.titlebox blockquote ul:nth-of-type(5) {width:145px;}
+
+
+/*=======SUBMIT LINK OR POST BUTTONS=====*/
+.sidebox.submit {
+    width: 300px;
+}
+body:not(.listing-page) .morelink {
+border-color: #5ba2fd!important;
+border-radius: 2px!important;
+    background-image: url(%%Purp2%%) !important;
+    background-repeat: repeat;
+    color: #ffa200 !important;
+    border-right:0px !important;
+color: #ffa200;
+}
+body:not(.listing-page) .morelink a {
+    color: #ffa200!important;
+    text-shadow: 1px 1px 2px #eee;
+}
+body .morelink {
+    padding: 4px 10px;
+    border-color: #3079ed!important;
+    border-radius: 2px!important;
+    background-image: url(%%Purp2%%) !important;
+    background-repeat: repeat;
+    color: #ffa200 !important;
+    border-right:0px !important; 
+    font-weight: normal;
+    letter-spacing: 0;
+}
+body .morelink:hover,
+body:not(.listing-page) .morelink:hover {
+    border-color: #08c;
+    background-image: url(%%Purp2%%) !important;
+    background-repeat: repeat;
+    color: #F6F6F6 !important;
+    border-right:0px !important;
+    color: #fff;
+}
+body .morelink a {
+    color: #ffa200!important;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px #0f0f0f;
+}
+body .morelink a:hover,
+body:not(.listing-page) .morelink:hover a,
+body:not(.listing-page) .morelink a:hover {
+    color: #fff!important;
+    text-shadow: 1px 1px 2px #0f0f0f!important;
+}
+body .morelink .nub,
+body .morelink:hover .nub,
+body .disabled .morelink .nub,
+body .disabled .morelink:hover .nub {
+    background: none transparent!important;
+}
+body .disabled .morelink,
+body .disabled .morelink:hover {
+    border-color: #f5f5f5!important;
+    background-color: #eee;
+    background-image: none!important;
+}
+body .disabled .morelink a,
+body .disabled .morelink a:hover {
+    color: #aaa!important;
+    text-shadow: none!important;
+    cursor: default!important;
+}
+.sidebox.submit {
+    width: 147px;
+    word-spacing: 1px;
+    letter-spacing: -1px;
+}
+.sidebox.submit-link {
+    position: relative;
+    display: block;
+    margin-left: 0px;
+    text-indent: 0px;
+}
+.sidebox.submit-link .morelink .nub:before {
+    content: 'OR';
+    position: relative;
+    top: 4px;
+    margin-left: 12px;
+    padding: 5px;
+    height: auto;
+    border: 1px solid #fbfbf9;
+    border-radius: 20px;
+    background-color: #fbfbf9!important;
+    color: #2977c6;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #fff,1px 1px 2px #808088;
+    z-index: 1;
+}
+.sidebox.submit-text {
+    position: relative;
+    float: right;
+    margin-top: -49px; 
+/*If the buttons aren't parallel, adjust this line*/
+    text-align: right;
+}
+body.res-nightmode .sidebox.submit-link .morelink .nub {
+    display: block!important;
+}
+body.res-nightmode .sidebox.submit-link .morelink .nub:before {
+    border: 1px solid #222222;
+    background-color: #222222!important;
+    color: #bb6107;
+    text-shadow: 1px 1px 1px #000,1px 1px 2px #1f1f1f;
+}
+body.res-nightmode .sidebox.submit-text {
+    top: -2px;
+}
+
+
+/*===The CSS has been Created by /u/Jaxspider===*/
+/*===Do not alter it unless you know what you===*/
+/*===are doing.=================================*/
+
+/*===COLORS===*/
+
+/*
+Body aka skim yellow FFFEEF 
+Royal green 58B55E
+light orange F0DE97
+Orange red FF6000
+Orange FFA200
+Gold FFCC00
+Light light grey for the body F6F6F6
+Royal Blue 1E2B3E
+Blue box CDEDFA
+    background-image: url(%%Bluebox4%%) !important;
+    background-repeat: repeat; 
+Dark gray background color 2B3033 
+*/
+
+   /*===Top Header Area===*/
+
+    #header {
+        background: #2B3033 !important;
+        border: none;
+        z-index:1; 
+        background: url(%%Hbanner4a%%) !important;
+        margin-bottom: 0px;
+        }
+
+    header-bottom-left {
+        display: none;
+        /*padding: 3px !important;*/
+        }
+
+    .content {
+    z-index: 1;
+    margin: 20px 5px 0px 5px;
+    }
+
+
+    /*===Subreddit title===*/
+
+    .pagename a {
+        text-indent: -9999px !important;
+        background: url(%%TL1%%) !important;
+        background-repeat: no-repeat; 
+        width: 250px !important;
+        height: 88px !important;                                 
+        background-position: 0px 0px !important;
+        left: 200px !important;
+        display: inline-block !important;
+        position: absolute !important;
+        margin-left: -100px !important;
+        margin-top: 20px !important;
+        margin-right: 200px !important;
+
+        }
+
+    .pagename a:hover {
+        background-image: url(%%TL2%%) !important;
+        }
+
+
+    /*===Background color===*/
+
+    body {
+        background-color:#F6F6F6 !important;
+        }
+
+    .side {
+        background-color: #F6F6F6 !important;
+        }
+
+
+
+
+
+
+    /*===Replace Sidebar Name with Image===*/
+
+    .side .redditname a {
+        display: block;
+        height: 106px;
+        width: 300px;
+        background: url(%%Sidebar2%%) no-repeat 0 0;
+        text-indent: -9999px
+        }
+
+    .titlebox h1 a:hover {
+        background-image: url(%%Sidebar1%%);
+        }
+
+    /*===Karma Score Bar===*/ 
+    #header-bottom-right {
+        /*background-color: transparent !important;*/
+        background-image: url(%%Purp2%%) !important;
+        background-repeat: repeat;
+        color: #F6F6F6 !important;
+        margin-top: 10px !important;
+        padding-right: 10px !important;
+        font-size: 11px !important;
+        font-weight: bold!important;
+        }
+
+    #header-bottom-right a, #header-bottom-right .user {
+        color: #F6F6F6 !important;
+        }
+
+    /* RES toggle button */
+    #userbarToggle{
+        /*background-color: transparent !important;*/
+        background-image: url(%%Purp2%%) !important;
+        background-repeat: repeat;
+        color: #F6F6F6 !important;
+        border-right:0px !important;
+        }
+
+
+    /*===Thin Upper Header Bar==============*/
+
+    #sr-header-area {
+        background-color: #2B3033 !important;
+        border-bottom: none;
+        padding: -3px -1px 3px 3px;
+        font-size: 9px !important;
+        font-weight: bold!important;
+        }
+    #sr-more-link {
+        background-color: #2B3033 !important;
+        color: white;
+        font-size: 1.15em !important;
+        }
+    .sr-bar a, .dropdown.srdrop .selected {
+        color: white;
+        font-size: 1.15em !important;
+        font-weight: bold;
+        }
+    .sr-bar a:hover {
+        color: #FFCC00;  
+        text-decoration: none
+        }
+
+    /*===Search===*/
+
+    #search input[type="text"] {
+        background-image: url(%%Purp2%%) !important;
+        background-repeat: repeat; 
+        /*border-radius: 10px;*/
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        box-shadow: 0px 1px 4px #202020;
+        }
+
+    #search input[type="text"] {
+        border: 1px solid gray;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+        width: 290px;
+        padding: 4px;
+        }
+
+    /*===Below the search box custom colors for box*======*/
+
+    #searchexpando {
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        background-color: #C1B0C2;
+        border: 1px solid #391D3B;
+        }
+
+    /*===Tabs Button Menu styling=============*/
+
+    /*NAVMENU*/
+
+    ul.tabmenu {
+        background-image: url(%%Purp2%%) !important;
+        background-repeat: repeat; 
+        border: 0px solid black;
+        position: absolute;
+        z-index:20 !important;
+        font-size: 11px;
+        top: 130px;
+        left: 100px;
+
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px
+        }
+    ul.tabmenu li {
+        padding: 7px 0px;
+        display: block;
+        float: left
+        }
+    ul.tabmenu:after {
+        clear: both
+        }
+    ul.tabmenu li a, ul.tabmenu li.selected a {
+        background-color: transparent;
+        border: 0;
+        color: white;
+        padding: 1px 6px 2px 6px;
+        }
+    ul.tabmenu li.selected a {
+        color: #FFCC00 !important;                       
+    /*    background-color: #FFCC00 !important;*/
+        font-weight: bold !important;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        }
+    ul.tabmenu li a:hover {
+        background-color: white !important; /*FF9900*/
+        color: #A11DA8 !important;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        }
+
+
+    /*===Up & Down Arrows======*/
+
+    /*
+    .arrow.down { visibility: hidden; display: none }*
+    */
+
+    .thing .midcol {
+        width: 40px!important; 
+    }
+
+
+    .arrow.up {
+        background-image: url(%%UA1%%) !important;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 15px !important;
+        width: 13px !important;
+        }
+
+    .arrow.upmod {
+        background-image: url(%%UA2%%) !important;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 15px !important;
+        width: 13px !important;
+        }
+
+    .arrow.down {
+        background-image: url(%%DA1%%) !important;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 15px !important;
+        width: 13px !important;
+        }
+
+    .arrow.downmod {
+        background-image: url(%%DA2%%) !important;
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 15px !important;
+        width: 13px !important;
+        }
+
+
+    .link .score {
+        margin-top: 2px;
+        font-size: 14px;
+    }
+    .link .score.likes {
+        color: #A11DA8
+    }
+    .link .score.dislikes {
+        color: #0022D1
+    }
+
+    /*===Downvote message===*/
+    .commentarea .arrow.down:hover:after {
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        padding: 5px;
+        background-color: #FCD4D4;
+        border: 1px solid #FF0000;
+        content: "Doesn't contribute to discussion.";
+        text-align: center;
+        font-size: 10px;
+        font-weight: normal;
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+
+
+    /*===Fancy No Thumbnail===*/
+
+    .thumbnail.default {
+        background-image: url(%%TEX%%) !important;
+        background-position: top left !important;
+        }
+  /*===Fancy Self===*/
+
+    .thumbnail.self {
+        background-image: url(%%TEQ%%) !important;
+        background-position: top left !important;
+        }
+
+
+    /*===Huge comment font=====*/
+
+    h2 {
+        font-size: 135% !important;
+        font-weight: bold !important;
+        background-color: #CCCCCC;
+        text-align: center;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        color: black;
+        } /*Greybar text*/
+
+    h3 {
+        font-size: 200% !important;
+        font-weight: bold !important;
+        background-image: url(%%Purp2%%) !important;
+        background-repeat: repeat; 
+        /*background-color: #58B55E;*/
+        text-align: center;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        box-shadow: 0px 1px 4px #202020;
+        color: white !important;
+        } /*Purp2 text*/
+
+    h4 {
+        font-size: 200% !important;
+        font-weight: bold !important;
+        color: #A11DA8 !important;
+        } /*Purple text*/
+
+    h5 {
+        font-size: 200% !important;
+        font-weight: bold !important;
+        color: #FFCC00;
+        } /*Gold text*/
+
+    /*===From readers to... Derp Lovers======*/
+
+
+    div.titlebox .subscribers span.word {
+        display: none
+        }
+    div.titlebox .subscribers span.number:after {
+        content: " Hookah Lovers"
+        }
+    div.titlebox .users-online span.word {
+        display: none
+        }
+    div.titlebox .users-online span.number:after {
+        content: " Enjoying life right now"
+        } 
+
+
+    /*===Submit button & Create a community button===*/
+
+    .morelink, .morelink:hover {                                 
+        display: block;
+        text-align: center;
+        position: relative;
+        border: none;
+        background: white none repeat-x scroll center left;   
+        background-image: url(%%Purp2%%) !important;
+        background-repeat: repeat; 
+        font-size: 20px !important;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        box-shadow: 0px 1px 4px #202020;
+        }
+    .morelink:hover a {
+        color: #FFAE00;
+        /*font-size: 120%;*/
+        }
+    .morelink a {
+        color: white;
+        }
+    .morelink .nub {
+        display: none
+        }
+
+    /*===Announcements======*/
+
+
+    .titlebox .usertext-body .md h6
+    {
+        background-image: url(%%GO2%%) !important;
+        position: absolute;
+        top: 75px;
+        left: 380px;
+        z-index: 50;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 4px;
+        color: #A11DA8;
+        font-size: 18px;
+        text-align: center;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        box-shadow: 0px 1px 4px #202020;   
+        }
+
+
+    /*===Comment colors, Link colors, Author colors etc etc=====*/
+
+
+    .thing.link { 
+        width: 65% !important;
+        padding-bottom: 10px !important;
+        margin-bottom: 10px !important;
+        border-bottom: 1px solid #ddd !important;
+        border-style: none;
+        /*background-color: #D7D7D7;*/
+        }
+    .last-clicked {
+        border: 0 !important;
+        border-bottom: 1px solid #ddd !important;
+        }
+
+    .thing.link a.title { 
+        color: #A11DA8 !important;
+        font: 16px "arial" !important;
+        font-weight: bold !important;
+        }
+    .title a.title:visited {
+        color: #a9a9a9 !important;
+        }
+    .sidecontentbox a { 
+        color: #444 !important;
+        }
+    .rank { 
+        padding: 0px 7px 0px 0px;
+        }
+    .author {
+        color: #FF9900 !important;
+        }
+
+    /*====== Comment TextArea Box */
+
+    .commentarea textarea {
+        background: url(%%Commentbox%%) no-repeat;
+        border-radius: 5px;
+        background-color: #FAFAFA;
+        border: 1px solid #CDCDCD;
+        width: 520px;
+        height: 160px;
+        }
+    .commentarea textarea:focus {
+        background-color: #E3E3E3 !important;     
+        border-radius: 10px;
+        outline: none !important;
+       }
+
+
+    /*===Voting and Post Information Box. & Custom submission score text======*/
+
+    .linkinfo {
+        background-color: #C1B0C2 !important;
+        border: 1px solid #391D3B !important;
+        text-decoration: none;
+        }
+
+
+    .score .number:after {
+        content: " Passed the hose";
+        font-size: 15px
+        }
+    .score .word {
+        display: none
+        }
+
+
+    /*===Hide Create community button=====*/
+
+    .side .sidebox.create {
+        display: none
+        }
+
+    .titlebox .bottom {
+    display:none!important;
+    }
+
+
+    /*===Spoiler System===*/
+
+    a[href$="/spoiler"] {
+        background: #1882D0 !important;
+        color: #1882D0 !important
+    }
+
+    a[href$="/spoiler"]:hover {
+        color: #FFF !important
+    }
+
+
+
+
+    .sidecontentbox h1 { font: 18px/150% bold !important; text-transform: lowercase !important; color: #444 !important; }
+
+    .sidecontentbox * { border-color: #bbb !important; }
+
+    .side>.sidecontentbox * { border: 0 !important; }
+
+
+
+    .reddit-comment-link { color: #666 !important; }
+
+
+
+    .titlebox h1 { font: 28px/150% bold !important; }
+
+    .last-clicked { }
+
+    .child{border-left:none;}
+
+
+
+    .leavemoderator-button { background: transparent !important; position: relative; left: -20px; }
+
+    .leavemoderator-button a { color: #019 !important; }
+
+    .leavemoderator-button a:after { content: " but think of the children!" }
+
+
+
+    .footer { opacity: .4; }
+
+    .footer * { color: #333 !important; }
+
+
+    .comment { padding-top: 15px !important; }
+
+    .comment .buttons a { opacity: .6; }
+
+    .comment .buttons a:hover { opacity: 1; }
+
+    .comment.spam { background: #fff !important; opacity: .3; }
+
+    .comment.spam:hover { opacity: 1; }
+
+
+    .expando .usertext-body { margin: 22px 0px 7px 0px !important; }
+
+    .expando .md { -moz-border-radius: 5px !important; border-color: #bbb !important; background: #fafafa!important; padding: 5px !important; }
+
+
+    /*===ICONS=====*/
+
+    /* a[href="/MSB2"]:after { content: url(%%MSB2%%) }*/
+
+
+    /* Link Flair */
+
+    /* all labels */
+
+    .linkflairlabel{
+    font-size: 12px;
+    padding: 2px 2px 2px 23px!important;
+    background: url(%%LINKFLAIR%%) no-repeat;
+    text-shadow:none;
+    border:none;
+    }
+
+    /* Meta label */
+
+    .linkflair-Meta .linkflairlabel{
+    background-position: 0px -108px
+    }
+
+    /* Article label */
+
+    .linkflair-Article .linkflairlabel{
+    background-position: 0px -0px
+    }
+
+    /* show label */
+
+    .linkflair-Show .linkflairlabel{
+    background-position: 0px -54px
+    }
+
+    /* review label */
+
+    .linkflair-Review .linkflairlabel{
+    background-position: 0px -90px
+    }
+
+    /* help label */
+
+    .linkflair-Help .linkflairlabel{
+    background-position: 0px -18px
+    }
+
+    /* tip label */
+
+    .linkflair-Tip .linkflairlabel{
+    background-position: 0px -72px
+    }
+
+    /* discuss label */
+
+    .linkflair-Discuss .linkflairlabel{
+    background-position: 0px -36px
+    }
+
+
+    /*===Flair Colors=========================*/
+
+    .flair-redflair { 
+        color: #D92929;
+        background-color: transparent;
+        }
+
+    .flair-orangeflair {
+        color: #F2911B;
+        background-color: transparent;
+        }
+
+    .flair-yellowflair {
+        color: #F2CB05;
+        background-color: transparent;
+        }
+
+    .flair-greenflair {
+        color: #228822;
+        background-color: transparent;
+        }
+
+    .flair-blueflair {
+        color: #016483;
+        background-color: transparent;
+        }
+
+    .flair-violetflair {
+        color: #7A2854;
+        background-color: transparent;
+        }
+
+
+    /*===New name for moderators====================*/  
+    .sidecontentbox .helplink + .title h1 { 
+        font-size: 0 !important 
+    }
+    .sidecontentbox .helplink + .title h1:before { 
+        font-size: 11pt !important; 
+        content: "Moderation Staff"; 
+    }
+
